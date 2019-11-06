@@ -1,9 +1,11 @@
 import UIKit
 
-
-
-
-
+func isTwinPrime(_ a: Double) -> Bool {
+    
+    for num in 1..<1000 {
+        a / Double(num)
+    }
+}
 
 
 
