@@ -1,10 +1,44 @@
 import UIKit
 
 
+func isTwinPrime(pNumber: Int) -> Bool {
+
+	let twoMore = pNumber + 2
+	let twoLess = pNumber - 2
+
+
+	if checkPrime(number: twoLess) || checkPrime(number: twoMore) {
+		return true
+	} else {
+		return false
+	}
+}
 
 
 
+func checkPrime(number: Int) -> Bool {
 
+	switch number {
+	case 1:
+		return false
+	case 2:
+		return true
+	case 3:
+		return true
+	default:
+		var n = 2
+		while n * n  <= number {
+			if number % n == 0 {
+			return false
+			}
+			n = n + 1
+		}
+		return true
+	}
+}
+
+
+isTwinPrime(pNumber: 907)
 
 
 
