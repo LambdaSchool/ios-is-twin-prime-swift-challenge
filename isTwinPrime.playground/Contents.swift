@@ -2,7 +2,17 @@ import UIKit
 
 
 
+func isPrime(_ number: Int) -> Bool {
+    if number % 2 == 0 {
+        return false
+    }
+}
 
+
+
+func isTwinPrime(_ number: Int) -> Bool {
+    
+}
 
 
 
